@@ -1,0 +1,11 @@
+{
+  "ship_id_list_name": "ship_id_list.txt",
+  "is_winner_list_name": "is_winner_list.txt",
+  "attacker_ship_list_name": "attacker_ship_list.txt",
+  "attacker_corp_list_name": "attacker_corp_list.txt",
+  "victim_ship_list_name": "victim_ship_list.txt",
+  "victim_corp_list_name": "victim_corp_list.txt",
+  "time_list_name": "time_list.txt",
+  "hour_list_name": "hour_list.txt",
+  "data_frame_name": "dataframe_csv.csv"
+}
