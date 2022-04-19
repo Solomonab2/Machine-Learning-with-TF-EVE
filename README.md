@@ -1,26 +1,9 @@
-# Eve-Machine-Learning-with-TensorFlow
+# Machine-Learning-with-TF-EVE
 A personal project to practice learning TensorFlow on an independent data set.
 
 ## About the project
 
-Recently, I have taken an interest in learning about the machine learning library known as TensorFlow. I felt that TensorFlow was a strong starting point for furthering my skills in data science with the Python language. 
-
-##### Motivation
-
-I began my quest of learning TensorFlow through Google's Machine Learning Crash Course and followed the guides on building simple linear regression and binary classification models. From there, I moved on to TensorFlow's documentation and began teaching myself through the guides that they have posted on their website. At some point, there were questions that I had that could not be simply answered by the basic examples that I had covered, and I wanted a chance to test myself on the knowledge that I had been learning. 
-
-One of the main questions that I had been pondering was "how can I take what I have learned, and apply it to a completely new set of data," and more specifically, "if I am able to find an intriguing set of data, how do I know what types of data I can build a model with, and how would I go about framing each of those in a scientific way that my model can understand?" Because of these questions, I set myself two goals in mind: 
-  1. First, to take a completely new set of data from TensorFlow's included datasets for which I would:
-    - Establish the types of data in the dataset and possible correlations between the data that might make for an interesting ML model
-    - Write a script to download and preprocess the data in preparation for a model
-    - Use TensorFlow to construct a machine learning model that I would feed my preprocessed data to for training
-  2. Second, to find a suitable dataset that had not yet been used for creating machine learning models for which I would:
-    - Find a way to access and download the data set from the internet programmatically
-    - Take the downloaded data set and pull out useful data to use in a TensorFlow model
-    - Clean and preprocess the data for the best results when using it in a machine learning model
-    - Construct a new TensorFlow model from the knowledge that I had learned so far and train and evaluate the model on the new data set
-
-The first of these goals is not included in this particular project, but the skills that I learned from that ultimately helped me build the model for my second goal.
+Recently, I uploaded a repository, `Machine-Learning-with-TF-diamonds`, that was a personal project for learning tensorflow. After working with TF in that project, I wanted to take things one step further and apply that knowledge towards an independent data set that had not been used for machine learning models yet. The following repository is the end result of my plan to use TensorFlow on a set of unique data from the game Eve Online. 
 
 ##### The Data Set
 
@@ -28,9 +11,9 @@ On my quest to find a suitable data set that had not yet been used for a ML mode
 
 Because of this overwhelming amount of game data, I thought that *Eve Online* was a perfect starting point for my proposed goals and I sought to create a model around some of the historical data that is provided for the game online. 
 
-##### The First Model
+##### The Model
 
-The first suitable idea that came to mind when exploring the game's API documentation was to take historical player combat logs and use them to train a TensorFlow model to predict the likelyhood of a particular ship winning a fight with another particular ship. The historical player-combat data that is provided online conveniently includes a log of every ship that is destroyed by another player and this log includes tidbits of useful information in the following format:
+The most suitable idea that came to mind when exploring the game's data was a simple winner-predictor of a two-player fight. From that idea and the available data, I decided to utilize historical player-combat-logs and use them to train a TensorFlow model to predict the likelyhood of a particular ship winning a fight with another particular ship. The historical player-combat data that is provided online conveniently includes a log of *every ship that is destroyed by another player* and this log includes tidbits of useful information in the following format:
     - The ID number of the ship that was destroyed
     - The ID number of the victim that was flying the ship
     - The victim's corporation ID number
